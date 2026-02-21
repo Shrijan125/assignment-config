@@ -1,0 +1,16 @@
+server:
+  port: 8765
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: product-service
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+            - Path=/products/**
+
+        - id: auth-service
+          uri: lb://USER
+          predicates:
+            - Path=/auth/**
