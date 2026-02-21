@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:oracle:thin:@localhost:3000/FREEPDB1
     username: system
-    password: oracle
+    password: 0000
     driver-class-name: oracle.jdbc.OracleDriver
 
   jpa:
