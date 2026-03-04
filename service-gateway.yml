@@ -13,7 +13,7 @@ spring:
         - id: auth-service
           uri: lb://AUTH-SERVICE
           predicates:
-            - Path=/auth/**
+            - Path=/auth/**,/oauth/**
 
         - id: order-service
           uri: lb://ORDER-SERVICE
